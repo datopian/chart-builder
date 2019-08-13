@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "react-cosmos": "^4.8.1",
     "react-scripts": "3.1.0"
   },
   "dependencies": {
@@ -10,6 +11,8 @@
     "react-dom": "^16.9.0"
   },
   "scripts": {
+    "cosmos": "cosmos",
+    "cosmos:export": "cosmos-export",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
