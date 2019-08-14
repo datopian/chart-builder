@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ChartBuilder from './ChartBuilder';
+import { ChartBuilder } from './ChartBuilder';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
