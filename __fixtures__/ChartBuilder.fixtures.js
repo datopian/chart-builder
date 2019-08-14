@@ -1,8 +1,7 @@
 import { ChartBuilder } from '../src/ChartBuilder.js'
 
 
-const datapackage = {
-  name: 'test',
+const view = {
   resources: [
     {
       name: 'test',
@@ -23,15 +22,14 @@ const datapackage = {
         ]
       }
     }
-  ],
-  views: []
+  ]
 }
 
-const dataViewBuilderAction = (views) => {
-  alert(JSON.stringify(views))
+const dataViewBuilderAction = (view) => {
+  alert(JSON.stringify(view))
 }
 
 export default {
   component: ChartBuilder,
-  props: {datapackage, dataViewBuilderAction}
+  props: {view, dataViewBuilderAction}
 };

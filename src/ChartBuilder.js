@@ -4,31 +4,24 @@ import './css/tailwind.css';
 
 
 export const ChartBuilder = (props) => {
-  // Make a copy of passed datapackage so that we don't mutate it:
-  const datapackage = JSON.parse(JSON.stringify(props.datapackage))
+  // Make a copy of passed view so that we don't mutate it:
+  const view = JSON.parse(JSON.stringify(props.view))
   // TODO: make it work with multiple resources
-  const fields = datapackage.resources[0].schema
-    ? datapackage.resources[0].schema.fields
+  const fields = view.resources[0].schema
+    ? view.resources[0].schema.fields
     : []
   const chartTypes = ['line', 'bar']
 
   function handleSubmit(values) {
-    // Prep a new view:
-    const view = {
-      resources: [datapackage.resources[0]],
-      specType: 'simple',
-      spec: {
-        type: values.chartType,
-        group: values.xAxis,
-        series: [values.yAxis]
-      }
+    // Prep an updated view:
+    view.specType = 'simple'
+    view.spec = {
+      type: values.chartType,
+      group: values.xAxis,
+      series: values.yAxis
     }
-
-    // Add it to `views` array so that it comes first (eg, renders above table):
-    const views = JSON.parse(JSON.stringify(props.datapackage.views))
-    views.unshift(view)
-    // Call Redux action with updated `views` array:
-    props.dataViewBuilderAction(views)
+    // Call Redux action with updated `view`:
+    props.dataViewBuilderAction(view)
   }
 
   return (

@@ -14,11 +14,14 @@ Usage:
 import { ChartBuilder } from '@datopian/chart-builder'
 
 function App() {
-  // Define `datapackage`
-  // Define `action`
+  // View should have compiled resources so that schema is available
+  const view = {
+    resources: [...]
+  }
+  // Define redux `action`
 
   return (
-    <ChartBuilder datapackage={datapackage} dataViewBuilderAction={action} />
+    <ChartBuilder view={view} dataViewBuilderAction={action} />
   )
 }
 ```
