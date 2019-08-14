@@ -1,6 +1,6 @@
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
-import './ChartBuilder.css';
+import './css/tailwind.css';
 
 
 export const ChartBuilder = (props) => {

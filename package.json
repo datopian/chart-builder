@@ -4,7 +4,8 @@
   "private": true,
   "devDependencies": {
     "react-cosmos": "^4.8.1",
-    "react-scripts": "3.1.0"
+    "react-scripts": "3.1.0",
+    "tailwindcss": "^1.1.1"
   },
   "dependencies": {
     "formik": "^1.5.8",
@@ -12,11 +13,12 @@
     "react-dom": "^16.9.0"
   },
   "scripts": {
-    "cosmos": "cosmos",
+    "cosmos": "yarn tailwind:css && cosmos",
     "cosmos:export": "cosmos-export",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "yarn tailwind:css && react-scripts start",
+    "build": "tailwind:css && react-scripts build",
     "test": "react-scripts test",
+    "tailwind:css":"tailwind build src/css/tailwind.src.css -c tailwind.js -o src/css/tailwind.css",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
