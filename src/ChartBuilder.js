@@ -6,6 +6,11 @@ import './css/tailwind.css';
 export const ChartBuilder = (props) => {
   // Make a copy of passed view so that we don't mutate it:
   const view = JSON.parse(JSON.stringify(props.view))
+  if (!view.resources) {
+    return (<div>ChartBuilder requires resource to be compiled into view.</div>)
+  } else if (!view.resources[0] || !view.resources[0].schema) {
+    return (<div>ChartBuilder requires resource schema.</div>)
+  }
   // TODO: make it work with multiple resources
   const fields = view.resources[0].schema
     ? view.resources[0].schema.fields
