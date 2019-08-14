@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.0.0",
+    "@testing-library/react": "^9.1.1",
     "react-cosmos": "^4.8.1",
     "react-scripts": "3.1.0",
     "tailwindcss": "^1.1.1"
@@ -18,7 +20,7 @@
     "start": "yarn tailwind:css && react-scripts start",
     "build": "tailwind:css && react-scripts build",
     "test": "react-scripts test",
-    "tailwind:css":"tailwind build src/css/tailwind.src.css -c tailwind.js -o src/css/tailwind.css",
+    "tailwind:css": "tailwind build src/css/tailwind.src.css -c tailwind.js -o src/css/tailwind.css",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

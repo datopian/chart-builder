@@ -39,7 +39,7 @@ export const ChartBuilder = (props) => {
 
             <div className="flex flex-wrap -mx-3 mb-2">
 
-              <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+              <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                 <label htmlFor="chartType" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Chart type</label>
                 <div className="relative">
                   <Field name="chartType" component="select" placeholder="Chart type" required className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
@@ -67,7 +67,7 @@ export const ChartBuilder = (props) => {
                 </div>
               </div>
 
-              <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+              <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                 <label htmlFor="yAxis" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Series</label>
                 <Field name="yAxis" placeholder="Field for Y axis" className="mb-4 mr-4">
                   {({ field, form }) => (
@@ -92,7 +92,7 @@ export const ChartBuilder = (props) => {
                             }}
                             className="mr-2 leading-tight"
                           />
-                          <span class="text-sm">
+                          <span className="text-sm">
                             {field.name}
                           </span>
                         </label>
