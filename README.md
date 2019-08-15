@@ -35,3 +35,7 @@ yarn cosmos
 ```
 
 Checkout `__fixtures__` dir for details.
+
+## Compile package
+
+For publication, run `yarn build:package` to compile package to `/dist` using babel

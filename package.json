@@ -2,7 +2,19 @@
   "name": "chart-builder",
   "version": "0.0.1",
   "private": true,
+  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "@testing-library/jest-dom": "^4.0.0",
     "@testing-library/react": "^9.1.1",
     "react-cosmos": "^4.8.1",
@@ -19,6 +31,7 @@
     "cosmos:export": "cosmos-export",
     "start": "yarn tailwind:css && react-scripts start",
     "build": "tailwind:css && react-scripts build",
+    "build:package": "rm -rf dist/ && mkdir dist && NODE_ENV=production npx babel src/ -d dist/ --copy-files",
     "test": "react-scripts test",
     "tailwind:css": "tailwind build src/css/tailwind.src.css -c tailwind.js -o src/css/tailwind.css",
     "eject": "react-scripts eject"
