@@ -11,6 +11,10 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "@testing-library/jest-dom": "^4.0.0",
     "@testing-library/react": "^9.1.1",
     "react-cosmos": "^4.8.1",
@@ -18,10 +22,6 @@
     "tailwindcss": "^1.1.1"
   },
   "dependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
     "formik": "^1.5.8",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
