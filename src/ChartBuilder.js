@@ -35,10 +35,10 @@ export const ChartBuilder = (props) => {
         initialValues={{ xAxis: fields[0].name, yAxis: [fields[0].name], chartType: chartTypes[0] }}
         onSubmit={values => handleSubmit(values)}
         render={({ values, setFieldValue }) => (
-          <Form className="bg-white bg-white text-sm p-3 text-left">
+          <Form className="bg-white bg-white text-xsm p-3 text-left">
             <div className="flex flex-wrap ">
               <div className="w-full mb-3">
-                <label htmlFor="chartType" className="text-xs font-bold uppercase text-gray-700">Chart type</label>
+                <label htmlFor="chartType" className="text-xsm font-bold uppercase text-gray-700">Chart type</label>
                 <div className="relative">
                   <Field name="chartType" component="select" placeholder="Chart type" required className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                     {chartTypes.map((type, index) => {
@@ -52,7 +52,7 @@ export const ChartBuilder = (props) => {
               </div>
 
               <div className="w-full mb-3">
-                <label htmlFor="xAxis" className="text-xs font-bold uppercase text-gray-700">Group column</label>
+                <label htmlFor="xAxis" className="text-xsm font-bold uppercase text-gray-700">Group column</label>
                 <div className="relative">
                   <Field name="xAxis" component="select" placeholder="Field for X axis" required className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                     {fields.map((field, index) => {
@@ -66,12 +66,12 @@ export const ChartBuilder = (props) => {
               </div>
 
               <div className="w-full mb-3">
-                <label htmlFor="yAxis" className="text-xs font-bold uppercase text-gray-700">Series</label>
+                <label htmlFor="yAxis" className="text-xsm font-bold uppercase text-gray-700">Series</label>
                 <Field name="yAxis" placeholder="Field for Y axis" className="mb-4 mr-4">
                   {({ field, form }) => (
                     fields.map((field, index) => {
                       return (
-                        <label key={`yAxis${index}`} className="block text-gray-500 font-bold">
+                        <label key={`yAxis${index}`} className="block text-gray-500 font-bold ">
                           <input
                             type="checkbox"
                             name="yAxis"
@@ -90,7 +90,7 @@ export const ChartBuilder = (props) => {
                             }}
                             className="mr-2 leading-tight"
                           />
-                          <span className="text-sm">
+                          <span className="text-xsm">
                             {field.name}
                           </span>
                         </label>
