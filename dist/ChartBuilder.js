@@ -39,9 +39,7 @@ var ChartBuilder = function ChartBuilder(props) {
     props.dataViewBuilderAction(view);
   }
 
-  return _react.default.createElement("div", {
-    className: "text-center w-full max-w-lg"
-  }, _react.default.createElement(_formik.Formik, {
+  return _react.default.createElement(_formik.Formik, {
     initialValues: {
       xAxis: fields[0].name,
       yAxis: [fields[0].name],
@@ -54,14 +52,14 @@ var ChartBuilder = function ChartBuilder(props) {
       var values = _ref.values,
           setFieldValue = _ref.setFieldValue;
       return _react.default.createElement(_formik.Form, {
-        className: "bg-white"
+        className: "bg-white bg-white text-sm p-3"
       }, _react.default.createElement("div", {
-        className: "flex flex-wrap -mx-3 mb-2"
+        className: "flex flex-wrap "
       }, _react.default.createElement("div", {
-        className: "w-full md:w-1/3 px-3 mb-6 md:mb-0"
+        className: "w-full mb-3"
       }, _react.default.createElement("label", {
         htmlFor: "chartType",
-        className: "block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+        className: "text-xs font-bold uppercase text-gray-700"
       }, "Chart type"), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
@@ -69,7 +67,7 @@ var ChartBuilder = function ChartBuilder(props) {
         component: "select",
         placeholder: "Chart type",
         required: true,
-        className: "block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        className: "block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
       }, chartTypes.map(function (type, index) {
         return _react.default.createElement("option", {
           value: type,
@@ -84,10 +82,10 @@ var ChartBuilder = function ChartBuilder(props) {
       }, _react.default.createElement("path", {
         d: "M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
       }))))), _react.default.createElement("div", {
-        className: "w-full md:w-1/3 px-3 mb-6 md:mb-0"
+        className: "w-full mb-3"
       }, _react.default.createElement("label", {
         htmlFor: "xAxis",
-        className: "block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+        className: "text-xs font-bold uppercase text-gray-700"
       }, "Group column"), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
@@ -95,7 +93,7 @@ var ChartBuilder = function ChartBuilder(props) {
         component: "select",
         placeholder: "Field for X axis",
         required: true,
-        className: "block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        className: "block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
       }, fields.map(function (field, index) {
         return _react.default.createElement("option", {
           value: field.name,
@@ -110,10 +108,10 @@ var ChartBuilder = function ChartBuilder(props) {
       }, _react.default.createElement("path", {
         d: "M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
       }))))), _react.default.createElement("div", {
-        className: "w-full md:w-1/3 px-3 mb-6 md:mb-0"
+        className: "w-full mb-3"
       }, _react.default.createElement("label", {
         htmlFor: "yAxis",
-        className: "block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+        className: "text-xs font-bold uppercase text-gray-700"
       }, "Series"), _react.default.createElement(_formik.Field, {
         name: "yAxis",
         placeholder: "Field for Y axis",
@@ -148,19 +146,15 @@ var ChartBuilder = function ChartBuilder(props) {
           }, field.name));
         });
       }))), _react.default.createElement("div", {
-        className: "flex items-center"
+        className: "w-full mt-2 mb-3"
       }, _react.default.createElement("div", {
-        className: "w-1/3"
-      }), _react.default.createElement("div", {
-        className: "w-1/3"
+        className: "flex justify-center"
       }, _react.default.createElement("button", {
         type: "submit",
         className: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-      }, "Add view")), _react.default.createElement("div", {
-        className: "md:w-1/3"
-      })));
+      }, "Add view"))));
     }
-  }));
+  });
 };
 
 exports.ChartBuilder = ChartBuilder;
