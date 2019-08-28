@@ -54,14 +54,14 @@ var ChartBuilder = function ChartBuilder(props) {
       var values = _ref.values,
           setFieldValue = _ref.setFieldValue;
       return _react.default.createElement(_formik.Form, {
-        className: "bg-white bg-white text-sm p-3 text-left"
+        className: "bg-white bg-white text-xsm p-3 text-left"
       }, _react.default.createElement("div", {
         className: "flex flex-wrap "
       }, _react.default.createElement("div", {
         className: "w-full mb-3"
       }, _react.default.createElement("label", {
         htmlFor: "chartType",
-        className: "text-xs font-bold uppercase text-gray-700"
+        className: "text-xsm font-bold uppercase text-gray-700"
       }, "Chart type"), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
@@ -87,7 +87,7 @@ var ChartBuilder = function ChartBuilder(props) {
         className: "w-full mb-3"
       }, _react.default.createElement("label", {
         htmlFor: "xAxis",
-        className: "text-xs font-bold uppercase text-gray-700"
+        className: "text-xsm font-bold uppercase text-gray-700"
       }, "Group column"), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
@@ -113,7 +113,7 @@ var ChartBuilder = function ChartBuilder(props) {
         className: "w-full mb-3"
       }, _react.default.createElement("label", {
         htmlFor: "yAxis",
-        className: "text-xs font-bold uppercase text-gray-700"
+        className: "text-xsm font-bold uppercase text-gray-700"
       }, "Series"), _react.default.createElement(_formik.Field, {
         name: "yAxis",
         placeholder: "Field for Y axis",
@@ -124,7 +124,7 @@ var ChartBuilder = function ChartBuilder(props) {
         return fields.map(function (field, index) {
           return _react.default.createElement("label", {
             key: "yAxis".concat(index),
-            className: "block text-gray-500 font-bold"
+            className: "block text-gray-500 font-bold "
           }, _react.default.createElement("input", {
             type: "checkbox",
             name: "yAxis",
@@ -144,7 +144,7 @@ var ChartBuilder = function ChartBuilder(props) {
             },
             className: "mr-2 leading-tight"
           }), _react.default.createElement("span", {
-            className: "text-sm"
+            className: "text-xsm"
           }, field.name));
         });
       }))), _react.default.createElement("div", {
