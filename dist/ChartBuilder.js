@@ -39,7 +39,9 @@ var ChartBuilder = function ChartBuilder(props) {
     props.dataViewBuilderAction(view);
   }
 
-  return _react.default.createElement(_formik.Formik, {
+  return _react.default.createElement("div", {
+    className: ""
+  }, _react.default.createElement(_formik.Formik, {
     initialValues: {
       xAxis: fields[0].name,
       yAxis: [fields[0].name],
@@ -52,7 +54,7 @@ var ChartBuilder = function ChartBuilder(props) {
       var values = _ref.values,
           setFieldValue = _ref.setFieldValue;
       return _react.default.createElement(_formik.Form, {
-        className: "bg-white bg-white text-sm p-3"
+        className: "bg-white bg-white text-sm p-3 text-left"
       }, _react.default.createElement("div", {
         className: "flex flex-wrap "
       }, _react.default.createElement("div", {
@@ -154,7 +156,7 @@ var ChartBuilder = function ChartBuilder(props) {
         className: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
       }, "Add view"))));
     }
-  });
+  }));
 };
 
 exports.ChartBuilder = ChartBuilder;

@@ -30,11 +30,12 @@ export const ChartBuilder = (props) => {
   }
 
   return (
+    <div className="">
       <Formik
         initialValues={{ xAxis: fields[0].name, yAxis: [fields[0].name], chartType: chartTypes[0] }}
         onSubmit={values => handleSubmit(values)}
         render={({ values, setFieldValue }) => (
-          <Form className="bg-white bg-white text-sm p-3">
+          <Form className="bg-white bg-white text-sm p-3 text-left">
             <div className="flex flex-wrap ">
               <div className="w-full mb-3">
                 <label htmlFor="chartType" className="text-xs font-bold uppercase text-gray-700">Chart type</label>
@@ -109,7 +110,9 @@ export const ChartBuilder = (props) => {
               </div>
             </div>
           </Form>
+          
         )}
       />
+      </div>
   );
 }
