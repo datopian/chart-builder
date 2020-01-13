@@ -5,11 +5,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ChartBuilder = void 0;
 
+require("./i18n/i18n");
+
 var _react = _interopRequireDefault(require("react"));
 
 var _formik = require("formik");
 
 require("./css/tailwind.css");
+
+var _reactI18next = require("react-i18next");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17,10 +21,13 @@ var ChartBuilder = function ChartBuilder(props) {
   // Make a copy of passed view so that we don't mutate it:
   var view = JSON.parse(JSON.stringify(props.view));
 
+  var _useTranslation = (0, _reactI18next.useTranslation)(),
+      t = _useTranslation.t;
+
   if (!view.resources) {
-    return _react.default.createElement("div", null, "ChartBuilder requires resource to be compiled into view.");
+    return _react.default.createElement("div", null, t('ChartBuilder requires resource to be compiled into view.'));
   } else if (!view.resources[0] || !view.resources[0].schema) {
-    return _react.default.createElement("div", null, "ChartBuilder requires resource schema.");
+    return _react.default.createElement("div", null, t('ChartBuilder requires resource schema.'));
   } // TODO: make it work with multiple resources
 
 
@@ -62,12 +69,12 @@ var ChartBuilder = function ChartBuilder(props) {
       }, _react.default.createElement("label", {
         htmlFor: "chartType",
         className: "text-xs font-bold uppercase text-gray-700"
-      }, "Chart type"), _react.default.createElement("div", {
+      }, t('Chart type')), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
         name: "chartType",
         component: "select",
-        placeholder: "Chart type",
+        placeholder: t('Chart type'),
         required: true,
         className: "block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
       }, chartTypes.map(function (type, index) {
@@ -88,7 +95,7 @@ var ChartBuilder = function ChartBuilder(props) {
       }, _react.default.createElement("label", {
         htmlFor: "xAxis",
         className: "text-xs font-bold uppercase text-gray-700"
-      }, "Group column"), _react.default.createElement("div", {
+      }, t('Group column')), _react.default.createElement("div", {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
         name: "xAxis",
@@ -114,9 +121,9 @@ var ChartBuilder = function ChartBuilder(props) {
       }, _react.default.createElement("label", {
         htmlFor: "yAxis",
         className: "text-xs font-bold uppercase text-gray-700"
-      }, "Series"), _react.default.createElement(_formik.Field, {
+      }, t('Series')), _react.default.createElement(_formik.Field, {
         name: "yAxis",
-        placeholder: "Field for Y axis",
+        placeholder: t('Field for Y axis'),
         className: "mb-4 mr-4"
       }, function (_ref2) {
         var field = _ref2.field,
@@ -154,7 +161,7 @@ var ChartBuilder = function ChartBuilder(props) {
       }, _react.default.createElement("button", {
         type: "submit",
         className: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-      }, "Add view"))));
+      }, t('Add view')))));
     }
   }));
 };
