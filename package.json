@@ -23,14 +23,17 @@
   },
   "dependencies": {
     "formik": "^1.5.8",
+    "i18next": "^19.0.3",
+    "i18next-browser-languagedetector": "^4.0.1",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-i18next": "^11.3.0"
   },
   "scripts": {
     "cosmos": "yarn tailwind:css && cosmos",
     "cosmos:export": "cosmos-export",
     "start": "yarn tailwind:css && react-scripts start",
-    "build": "tailwind:css && react-scripts build",
+    "build": "yarn tailwind:css && react-scripts build",
     "build:package": "rm -rf dist/ && mkdir dist && NODE_ENV=production npx babel src/ -d dist/ --copy-files",
     "test": "react-scripts test",
     "tailwind:css": "tailwind build src/css/tailwind.src.css -c tailwind.js -o src/css/tailwind.css",

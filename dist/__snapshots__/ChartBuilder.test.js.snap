@@ -3,19 +3,19 @@
 exports[`renders UI 1`] = `
 <div>
   <div
-    class="text-center w-full max-w-lg"
+    class=""
   >
     <form
-      class="bg-white"
+      class="bg-white bg-white text-xs p-3 text-left"
     >
       <div
-        class="flex flex-wrap -mx-3 mb-2"
+        class="flex flex-wrap "
       >
         <div
-          class="w-full md:w-1/3 px-3 mb-6 md:mb-0"
+          class="w-full mb-3"
         >
           <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            class="text-xs font-bold uppercase text-gray-700"
             for="chartType"
           >
             Chart type
@@ -24,7 +24,7 @@ exports[`renders UI 1`] = `
             class="relative"
           >
             <select
-              class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              class="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               name="chartType"
               placeholder="Chart type"
               required=""
@@ -56,10 +56,10 @@ exports[`renders UI 1`] = `
           </div>
         </div>
         <div
-          class="w-full md:w-1/3 px-3 mb-6 md:mb-0"
+          class="w-full mb-3"
         >
           <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            class="text-xs font-bold uppercase text-gray-700"
             for="xAxis"
           >
             Group column
@@ -68,7 +68,7 @@ exports[`renders UI 1`] = `
             class="relative"
           >
             <select
-              class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              class="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               name="xAxis"
               placeholder="Field for X axis"
               required=""
@@ -105,16 +105,16 @@ exports[`renders UI 1`] = `
           </div>
         </div>
         <div
-          class="w-full md:w-1/3 px-3 mb-6 md:mb-0"
+          class="w-full mb-3"
         >
           <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            class="text-xs font-bold uppercase text-gray-700"
             for="yAxis"
           >
             Series
           </label>
           <label
-            class="block text-gray-500 font-bold"
+            class="block text-gray-500 font-bold "
           >
             <input
               checked=""
@@ -124,13 +124,13 @@ exports[`renders UI 1`] = `
               value="a"
             />
             <span
-              class="text-sm"
+              class="text-xs"
             >
               a
             </span>
           </label>
           <label
-            class="block text-gray-500 font-bold"
+            class="block text-gray-500 font-bold "
           >
             <input
               class="mr-2 leading-tight"
@@ -139,13 +139,13 @@ exports[`renders UI 1`] = `
               value="b"
             />
             <span
-              class="text-sm"
+              class="text-xs"
             >
               b
             </span>
           </label>
           <label
-            class="block text-gray-500 font-bold"
+            class="block text-gray-500 font-bold "
           >
             <input
               class="mr-2 leading-tight"
@@ -154,7 +154,7 @@ exports[`renders UI 1`] = `
               value="c"
             />
             <span
-              class="text-sm"
+              class="text-xs"
             >
               c
             </span>
@@ -162,13 +162,10 @@ exports[`renders UI 1`] = `
         </div>
       </div>
       <div
-        class="flex items-center"
+        class="w-full mt-2 mb-3"
       >
         <div
-          class="w-1/3"
-        />
-        <div
-          class="w-1/3"
+          class="flex justify-center"
         >
           <button
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
@@ -177,9 +174,6 @@ exports[`renders UI 1`] = `
             Add view
           </button>
         </div>
-        <div
-          class="md:w-1/3"
-        />
       </div>
     </form>
   </div>
