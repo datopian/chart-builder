@@ -1,0 +1,9 @@
+{
+  "ChartBuilder requires resource to be compiled into view.": "L’éditeur de graphique nécessite qu'une ressource soit compilée en vue.",
+  "ChartBuilder requires resource schema.": "Le schéma de la ressource est requis pour l’éditeur de graphique.",
+  "Chart type": "Type de graphique",
+  "Group column": "Grouper colonne",
+  "Series": "Série",
+  "Field for Y axis": "Champ pour axe Y",
+  "Add view": "Ajouter une vue"
+}
