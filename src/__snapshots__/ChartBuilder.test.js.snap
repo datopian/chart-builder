@@ -3,10 +3,10 @@
 exports[`renders UI 1`] = `
 <div>
   <div
-    class=""
+    class="chart-builder-wrapper"
   >
     <form
-      class="bg-white bg-white text-xs p-3 text-left"
+      class="bg-white bg-white text-xs p-3 text-left chart-builder"
     >
       <div
         class="flex flex-wrap "
