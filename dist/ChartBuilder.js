@@ -47,7 +47,7 @@ var ChartBuilder = function ChartBuilder(props) {
   }
 
   return _react.default.createElement("div", {
-    className: ""
+    className: "chart-builder-wrapper"
   }, _react.default.createElement(_formik.Formik, {
     initialValues: {
       xAxis: fields[0].name,
@@ -61,7 +61,7 @@ var ChartBuilder = function ChartBuilder(props) {
       var values = _ref.values,
           setFieldValue = _ref.setFieldValue;
       return _react.default.createElement(_formik.Form, {
-        className: "bg-white bg-white text-xs p-3 text-left"
+        className: "bg-white bg-white text-xs p-3 text-left chart-builder"
       }, _react.default.createElement("div", {
         className: "flex flex-wrap "
       }, _react.default.createElement("div", {
