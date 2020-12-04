@@ -60,7 +60,7 @@ export const ChartBuilder = (props) => {
               <div className="w-full mb-3">
                 <label htmlFor="xAxis" className="text-xs font-bold uppercase text-gray-700">{t('Group column')}</label>
                 <div className="relative">
-                  <Field name="xAxis" component="select" aria-label={t('Field for X axis')} placeholder="Field for X axis" required className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                  <Field name="xAxis" id="xAxis" component="select" aria-label={t('Field for X axis')} placeholder="Field for X axis" required className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                     {fields.map((field, index) => {
                       return <option value={field.name} key={`field${index}`}>{field.name}</option>
                     })}

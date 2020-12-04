@@ -101,6 +101,7 @@ var ChartBuilder = function ChartBuilder(props) {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
         name: "xAxis",
+        id: "xAxis",
         component: "select",
         "aria-label": t('Field for X axis'),
         placeholder: "Field for X axis",
