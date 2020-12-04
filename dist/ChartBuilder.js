@@ -126,7 +126,6 @@ var ChartBuilder = function ChartBuilder(props) {
         "aria-label": t('Field for Y axis')
       }, _react.default.createElement("label", {
         htmlFor: "yAxis",
-        for: "yAxis",
         className: "text-xs font-bold uppercase text-gray-700"
       }, t('Series')), _react.default.createElement(_formik.Field, {
         name: "yAxis",
