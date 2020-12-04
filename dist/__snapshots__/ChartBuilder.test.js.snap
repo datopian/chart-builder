@@ -25,6 +25,7 @@ exports[`renders UI 1`] = `
           >
             <select
               class="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              id="chartType"
               name="chartType"
               placeholder="Chart type"
               required=""
@@ -69,8 +70,9 @@ exports[`renders UI 1`] = `
             class="relative"
           >
             <select
-              aria-labelledby="xAxis"
+              aria-label="Field for X axis"
               class="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              id="xAxis"
               name="xAxis"
               placeholder="Field for X axis"
               required=""
@@ -107,6 +109,7 @@ exports[`renders UI 1`] = `
           </div>
         </div>
         <div
+          aria-label="Field for Y axis"
           class="w-full mb-3"
           role="group"
         >
@@ -120,6 +123,7 @@ exports[`renders UI 1`] = `
             class="block text-gray-500 font-bold "
           >
             <input
+              aria-label="a"
               checked=""
               class="mr-2 leading-tight"
               name="yAxis"
@@ -136,6 +140,7 @@ exports[`renders UI 1`] = `
             class="block text-gray-500 font-bold "
           >
             <input
+              aria-label="b"
               class="mr-2 leading-tight"
               name="yAxis"
               type="checkbox"
@@ -151,6 +156,7 @@ exports[`renders UI 1`] = `
             class="block text-gray-500 font-bold "
           >
             <input
+              aria-label="c"
               class="mr-2 leading-tight"
               name="yAxis"
               type="checkbox"

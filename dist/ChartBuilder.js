@@ -130,6 +130,7 @@ var ChartBuilder = function ChartBuilder(props) {
         className: "text-xs font-bold uppercase text-gray-700"
       }, t('Series')), _react.default.createElement(_formik.Field, {
         name: "yAxis",
+        id: "yAxis",
         placeholder: t('Field for Y axis'),
         className: "mb-4 mr-4"
       }, function (_ref2) {

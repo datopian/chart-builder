@@ -73,7 +73,7 @@ export const ChartBuilder = (props) => {
 
               <div className="w-full mb-3" role="group" aria-label={t('Field for Y axis')}>
                 <label htmlFor="yAxis" for="yAxis" className="text-xs font-bold uppercase text-gray-700">{t('Series')}</label>
-                <Field name="yAxis" placeholder={t('Field for Y axis')} className="mb-4 mr-4">
+                <Field name="yAxis" id="yAxis" placeholder={t('Field for Y axis')} className="mb-4 mr-4">
                   {({ field, form }) => (
                     fields.map((field, index) => {
                       return (
