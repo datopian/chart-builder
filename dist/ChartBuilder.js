@@ -120,9 +120,11 @@ var ChartBuilder = function ChartBuilder(props) {
         d: "M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
       }))))), _react.default.createElement("div", {
         className: "w-full mb-3",
-        role: "group"
+        role: "group",
+        "aria-label": t('Field for Y axis')
       }, _react.default.createElement("label", {
         htmlFor: "yAxis",
+        for: "yAxis",
         className: "text-xs font-bold uppercase text-gray-700"
       }, t('Series')), _react.default.createElement(_formik.Field, {
         name: "yAxis",
@@ -138,6 +140,7 @@ var ChartBuilder = function ChartBuilder(props) {
           }, _react.default.createElement("input", {
             type: "checkbox",
             name: "yAxis",
+            "aria-label": field.name,
             value: field.name,
             checked: values.yAxis.includes(field.name),
             onChange: function onChange() {
