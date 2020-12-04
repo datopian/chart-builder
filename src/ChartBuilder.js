@@ -81,7 +81,7 @@ export const ChartBuilder = (props) => {
                           <input
                             type="checkbox"
                             name="yAxis"
-                            id="yAxis"
+                            id={`yAxis${index}`}
                             aria-label={field.name}
                             value={field.name}
                             checked={values.yAxis.includes(field.name)}

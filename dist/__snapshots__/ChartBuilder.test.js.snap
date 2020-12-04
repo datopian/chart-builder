@@ -126,7 +126,7 @@ exports[`renders UI 1`] = `
               aria-label="a"
               checked=""
               class="mr-2 leading-tight"
-              id="yAxis"
+              id="yAxis0"
               name="yAxis"
               type="checkbox"
               value="a"
@@ -143,7 +143,7 @@ exports[`renders UI 1`] = `
             <input
               aria-label="b"
               class="mr-2 leading-tight"
-              id="yAxis"
+              id="yAxis1"
               name="yAxis"
               type="checkbox"
               value="b"
@@ -160,7 +160,7 @@ exports[`renders UI 1`] = `
             <input
               aria-label="c"
               class="mr-2 leading-tight"
-              id="yAxis"
+              id="yAxis2"
               name="yAxis"
               type="checkbox"
               value="c"

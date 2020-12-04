@@ -141,7 +141,7 @@ var ChartBuilder = function ChartBuilder(props) {
           }, _react.default.createElement("input", {
             type: "checkbox",
             name: "yAxis",
-            id: "yAxis",
+            id: "yAxis".concat(index),
             "aria-label": field.name,
             value: field.name,
             checked: values.yAxis.includes(field.name),
