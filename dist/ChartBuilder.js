@@ -73,6 +73,7 @@ var ChartBuilder = function ChartBuilder(props) {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
         name: "chartType",
+        title: t('Chart type'),
         component: "select",
         placeholder: t('Chart type'),
         required: true,
@@ -135,7 +136,6 @@ var ChartBuilder = function ChartBuilder(props) {
           }, _react.default.createElement("input", {
             type: "checkbox",
             name: "yAxis",
-            title: field.name,
             value: field.name,
             checked: values.yAxis.includes(field.name),
             onChange: function onChange() {

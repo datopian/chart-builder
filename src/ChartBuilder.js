@@ -46,7 +46,7 @@ export const ChartBuilder = (props) => {
               <div className="w-full mb-3">
                 <label htmlFor="chartType" className="text-xs font-bold uppercase text-gray-700">{t('Chart type')}</label>
                 <div className="relative">
-                  <Field name="chartType" component="select" placeholder={t('Chart type')} required className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                  <Field name="chartType" title={t('Chart type')} component="select" placeholder={t('Chart type')} required className="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
                     {chartTypes.map((type, index) => {
                       return <option value={type} key={`chartType${index}`}>{type}</option>
                     })}
@@ -81,7 +81,6 @@ export const ChartBuilder = (props) => {
                           <input
                             type="checkbox"
                             name="yAxis"
-                            title={field.name}
                             value={field.name}
                             checked={values.yAxis.includes(field.name)}
                             onChange={() => {
