@@ -111,6 +111,7 @@ exports[`renders UI 1`] = `
         <div
           aria-label="Field for Y axis"
           class="w-full mb-3"
+          id="yAxis"
           role="group"
         >
           <label

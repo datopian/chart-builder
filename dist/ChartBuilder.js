@@ -122,6 +122,7 @@ var ChartBuilder = function ChartBuilder(props) {
         d: "M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
       }))))), _react.default.createElement("div", {
         className: "w-full mb-3",
+        id: "yAxis",
         role: "group",
         "aria-label": t('Field for Y axis')
       }, _react.default.createElement("label", {

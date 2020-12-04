@@ -71,7 +71,7 @@ export const ChartBuilder = (props) => {
                 </div>
               </div>
 
-              <div className="w-full mb-3" role="group" aria-label={t('Field for Y axis')}>
+              <div className="w-full mb-3" id="yAxis" role="group" aria-label={t('Field for Y axis')}>
                 <label htmlFor="yAxis" className="text-xs font-bold uppercase text-gray-700">{t('Series')}</label>
                 <Field name="yAxis" placeholder={t('Field for Y axis')} className="mb-4 mr-4">
                   {({ field, form }) => (
