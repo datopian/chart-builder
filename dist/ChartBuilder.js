@@ -73,6 +73,7 @@ var ChartBuilder = function ChartBuilder(props) {
         className: "relative"
       }, _react.default.createElement(_formik.Field, {
         name: "chartType",
+        id: "chartType",
         title: t('Chart type'),
         component: "select",
         placeholder: t('Chart type'),
@@ -101,7 +102,7 @@ var ChartBuilder = function ChartBuilder(props) {
       }, _react.default.createElement(_formik.Field, {
         name: "xAxis",
         component: "select",
-        "aria-labelledby": "xAxis",
+        "aria-label": t('Field for X axis'),
         placeholder: "Field for X axis",
         required: true,
         className: "block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
