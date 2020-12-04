@@ -81,6 +81,7 @@ export const ChartBuilder = (props) => {
                           <input
                             type="checkbox"
                             name="yAxis"
+                            title={field.name}
                             value={field.name}
                             checked={values.yAxis.includes(field.name)}
                             onChange={() => {

@@ -135,6 +135,7 @@ var ChartBuilder = function ChartBuilder(props) {
           }, _react.default.createElement("input", {
             type: "checkbox",
             name: "yAxis",
+            title: field.name,
             value: field.name,
             checked: values.yAxis.includes(field.name),
             onChange: function onChange() {
