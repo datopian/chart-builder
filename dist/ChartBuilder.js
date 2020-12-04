@@ -74,7 +74,6 @@ var ChartBuilder = function ChartBuilder(props) {
       }, _react.default.createElement(_formik.Field, {
         name: "chartType",
         component: "select",
-        "aria-label": t('Chart type'),
         placeholder: t('Chart type'),
         required: true,
         className: "block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -101,13 +100,11 @@ var ChartBuilder = function ChartBuilder(props) {
       }, _react.default.createElement(_formik.Field, {
         name: "xAxis",
         component: "select",
-        "aria-label": t('Group column'),
         placeholder: "Field for X axis",
         required: true,
         className: "block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
       }, fields.map(function (field, index) {
         return _react.default.createElement("option", {
-          for: "xAxis",
           value: field.name,
           key: "field".concat(index)
         }, field.name);
