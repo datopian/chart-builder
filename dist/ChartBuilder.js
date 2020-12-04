@@ -101,6 +101,7 @@ var ChartBuilder = function ChartBuilder(props) {
       }, _react.default.createElement(_formik.Field, {
         name: "xAxis",
         component: "select",
+        "aria-labelledby": "xAxis",
         placeholder: "Field for X axis",
         required: true,
         className: "block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -118,7 +119,8 @@ var ChartBuilder = function ChartBuilder(props) {
       }, _react.default.createElement("path", {
         d: "M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
       }))))), _react.default.createElement("div", {
-        className: "w-full mb-3"
+        className: "w-full mb-3",
+        role: "group"
       }, _react.default.createElement("label", {
         htmlFor: "yAxis",
         className: "text-xs font-bold uppercase text-gray-700"

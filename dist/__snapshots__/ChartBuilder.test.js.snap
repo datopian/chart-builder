@@ -28,6 +28,7 @@ exports[`renders UI 1`] = `
               name="chartType"
               placeholder="Chart type"
               required=""
+              title="Chart type"
             >
               <option
                 value="line"
@@ -68,6 +69,7 @@ exports[`renders UI 1`] = `
             class="relative"
           >
             <select
+              aria-labelledby="xAxis"
               class="block appearance-none w-full mt-1 bg-gray-200 border border-gray-200 text-gray-700 py-2 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               name="xAxis"
               placeholder="Field for X axis"
@@ -106,6 +108,7 @@ exports[`renders UI 1`] = `
         </div>
         <div
           class="w-full mb-3"
+          role="group"
         >
           <label
             class="text-xs font-bold uppercase text-gray-700"
